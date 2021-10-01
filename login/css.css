@@ -1,0 +1,103 @@
+/*
+    Folha de estilo do site Desenvolvimento de site com HTML5 e CSS3
+    @author Aluno Ivam Steffens Oliveira
+    https://github.com/ivam1973
+*/
+
+/*Smart Portrait*/
+@media (min-width: 476px) {
+    body { 
+        background-color: #5F7C8A;
+    }
+}
+
+/*Smart Land*/
+@media (min-width: 600px) {
+    body { 
+        background-color: aquamarine;
+    }
+}
+
+/*Tablet Portrait*/
+@media (min-width: 768px) {
+    body { 
+        background-color:yellow;
+    }
+}
+
+/*Tablet Land*/
+@media (min-width: 992px) {
+    body { 
+        background-color:red;
+    }
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+    body { 
+        background-color:rgb(35, 95, 35) ;
+    }
+}
+
+
+*{ 
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+} 
+
+form { 
+    background-color: white; 
+    max-width: 500px; 
+    width: 70%; 
+    padding: 20px; 
+    position: absolute; 
+    left: 50%; 
+    top: 50%; 
+    transform: translate(-50%, -50%);
+    border-radius: 20px;     
+}
+
+form h3 { 
+    text-align: center; 
+    color:#5F7C8A; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+form input[type=text], 
+form input[type=password]{ 
+    width: 100%; 
+    height: 45px;        
+    border: 1px solid #ccc;     
+    border-radius: 20px; 
+    padding-left: 10px;
+    margin: 10px 0;           
+}
+
+form input[type=submit]{
+    width: 100%; 
+    height: 30px;
+    padding-left: 30px;     
+    margin: 10px 0;     
+    cursor: pointer;
+    background-color: #5F7C8A;
+    color: white;       
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: 0px solid #ccc;     
+    border-radius: 20px;       
+}
+
+form input[type=submit]:hover{
+    background-color: #4A5F6A;
+    transition: 1s;
+}
+
+form input[type=text]:focus{
+    outline: 0;
+    border-color: #00740a;
+}
+
+form input[type=password]:focus{
+    outline: 0;
+    border-color: #00740a;
+}
